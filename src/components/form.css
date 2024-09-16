@@ -1,0 +1,111 @@
+.divprincipal{
+    display: flex;
+    flex-direction: column;
+}
+
+.divl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.divl > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+    /* quando ta pequeno deixar em 300px */
+    width: 100%;
+    margin: 10px;
+    background-color: #128c7e;
+    border-radius: 10px;
+}
+
+
+
+.divl > div > form{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.divl > div > h1{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+}
+
+.formint{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.formint label{
+    font-weight: 500;
+}
+
+.formint input{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #ece5dd;
+    border: none;
+    outline: none;
+}
+
+.btn-submit{
+    padding: 7px 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #25d366;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover{
+    background-color: #1ebe57;
+}
+
+
+
+.divr{
+    
+    width: 60%;
+    height: 100%;
+
+}
+
+
+@media (max-width: 900px) {
+    .divl > div{
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+    }
+    .divl > div > form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+        padding: 25px;
+        border-radius: 15px;
+    }
+    .divl > div > h1{
+        color: #fff;
+        margin-top: 10px;
+    }
+}

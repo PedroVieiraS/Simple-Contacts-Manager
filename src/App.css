@@ -1,0 +1,16 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #ece5dd;
+  /* background-image: url('./assets/contacts2.jpg'); */
+  background-image: no-repeat;
+  background-size: cover;
+}
