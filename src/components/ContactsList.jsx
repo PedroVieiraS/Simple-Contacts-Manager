@@ -18,14 +18,16 @@ export default function ContactsList() {
             {contacts.map((contact, index) => (
               <li key={index} className="contactli">
                 <p>
-                  <strong>Nome:</strong> {contact.contacts.name}
+                  <strong>Name:</strong> {contact.contacts.name}
                 </p>
                 <p>
-                  <strong>Telefone:</strong> {contact.contacts.tel}
+                  <strong>Phone:</strong> {contact.contacts.tel}
                 </p>
                 <p>
                   <strong>Email:</strong> {contact.contacts.email}
                 </p>
+                <button className="btn-submit">Deletar</button>
+                <button className="btn-submit">Alterar</button>
               </li>
             ))}
           </ul>

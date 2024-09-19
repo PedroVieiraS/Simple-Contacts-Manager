@@ -1,6 +1,7 @@
 import "./form.css";
 import { STORAGE_SERVICE } from "../services/storage";
 import { useState } from "react";
+import { EnvelopeSimple, Phone, User } from 'phosphor-react';
 
 export default function Form() {
   const [inputValue, setInputValue] = useState("");
@@ -32,31 +33,37 @@ export default function Form() {
 
           <form action="">
             <div className="formint">
-              <label htmlFor="">Nome:</label>
+              {/* <label htmlFor="">Nome:</label> */}
+              <User className="icon" />
               <input
                 type="text"
                 // value={setInputValue}
                 onChange={(e) => setInputValue(e.target.value)}
+                placeholder="Name"
                 required
               />
             </div>
 
             <div className="formint">
-              <label htmlFor="">Telefone:</label>
+              {/* <label htmlFor="">Telefone:</label> */}
+              <Phone className="icon" />
               <input
                 type="tel"
                 // value={setInputtel}
                 onChange={(e) => setInputtel(e.target.value)}
+                placeholder="Phone"
                 required
               />
             </div>
 
             <div className="formint">
-              <label htmlFor="">Email:</label>
+              {/* <label htmlFor="">Email:</label> */}
+              <EnvelopeSimple className="icon" />
               <input
                 // value={setInputemail}
                 onChange={(e) => setInputemail(e.target.value)}
                 type="email"
+                placeholder="Email"
                 required
               />
             </div>

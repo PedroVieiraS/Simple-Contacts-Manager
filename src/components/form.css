@@ -20,8 +20,12 @@
     /* quando ta pequeno deixar em 300px */
     width: 100%;
     margin: 10px;
-    background-color: #128c7e;
+    /* background-color: #128c7e; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #ece5dd;
     border-radius: 10px;
+    /* border: 1px solid #128c7e; */
+    /* //#ece5dd */
 }
 
 
@@ -35,18 +39,19 @@
     gap: 20px;
     padding: 25px;
     border-radius: 15px;
+    
 }
 
 .divl > div > h1{
     display: flex;
     justify-content: center;
-    color: #fff;
+    color: #128c7e;
     width: 100%;
 }
 
 .formint{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     color: white;
 }
@@ -57,17 +62,18 @@
 
 .formint input{
     padding: 5px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     background-color: #ece5dd;
-    border: none;
-    outline: none;
+    /* border: none; */
+    /* outline: none; */
+    border-bottom: 2px solid #128c7e;
 }
 
 .btn-submit{
     padding: 7px 14px;
     font-weight: 600;
     border-radius: 10px;
-    background-color: #25d366;
+    background-color: #128c7e;
     color: white;
     cursor: pointer;
     border: none;
@@ -81,10 +87,14 @@
 
 
 .divr{
-    
     width: 60%;
     height: 100%;
 
+}
+
+.icon{
+    font-size: 32px;
+    color:#128c7e;
 }
 
 
@@ -105,7 +115,7 @@
         border-radius: 15px;
     }
     .divl > div > h1{
-        color: #fff;
+        color: #128c7e;
         margin-top: 10px;
     }
 }
