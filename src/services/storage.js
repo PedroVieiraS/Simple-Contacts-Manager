@@ -14,9 +14,7 @@ export const STORAGE_SERVICE = {
     createContacts: (contname) => {
         const storage = localStorage.getItem(DB_KEY)
 
-        const newContact = {
-            contacts: contname,
-            }
+        const newContact = { contacts: contname };
 
         if(storage){
             const storageParsed = JSON.parse(storage)
@@ -29,7 +27,16 @@ export const STORAGE_SERVICE = {
         return localStorage.setItem(DB_KEY,JSON.stringify([newContact]))
 
     },
-    // deleteContacts:(){
-        
-    // }
+    deleteContact: (index) => {
+        const storage = localStorage.getItem(DB_KEY);
+        if (storage) {
+            const storageParsed = JSON.parse(storage);
+            const contacts = storageParsed.filter((_, i) => i !== index);
+            localStorage.setItem(DB_KEY, JSON.stringify(contacts));
+        }
+    },
+    saveContacts: (contacts) => {
+        localStorage.setItem(DB_KEY, JSON.stringify(contacts));
+    }
+    
 }
